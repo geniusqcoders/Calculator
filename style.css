@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "Lalezar";
+    src: url("./font/Lalezar-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    background-color: #222831;
+    color: #FFFFFF;
+    --accent-color: #393E46;
+    --primary-color: #DFD0B8;
+}
+
+#calculator_div {
+    position: absolute;
+    width: 700px;
+    height: 442px;
+    left: calc(50% - 700px / 2);
+    top: calc(50% - 442px / 2);
+    background-color: rgba(57, 62, 70, 0.2);
+    border-radius: 48px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+
+    box-shadow: inset -42px 38px 250px -198px rgba(255, 255, 255, 0.25),
+    0px 0px 153.4px -53px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-family: "Lalezar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: normal;
+    color: #FFFFFF;
+    word-break: break-word;
+    text-align: center;
+}
+
+#input_div1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 290px;
+    height: 110px;
+    left: calc(50% - 290px / 2 - 155px);
+    top: calc(50% - 110px / 2 - 72px);
+
+    background: rgba(57, 62, 70, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 27px;
+}
+
+#input_div2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 290px;
+    height: 110px;
+    left: calc(50% - 290px / 2 + 155px);
+    top: calc(50% - 110px / 2 - 72px);
+
+    background: rgba(57, 62, 70, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 27px;
+}
+
+#input_div3 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 290px;
+    height: 110px;
+    left: calc(50% - 290px / 2 - 155px);
+    top: calc(50% - 110px / 2 + 49px);
+
+    background: rgba(57, 62, 70, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 27px;
+}
+
+#input_div4 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 290px;
+    height: 110px;
+    left: calc(50% - 290px / 2 + 155px);
+    top: calc(50% - 110px / 2 + 49px);
+
+    background: rgba(57, 62, 70, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 27px;
+}
+
+#total_div {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    left: calc(50% - 600px / 2);
+    top: calc(50% - 70px / 2 + 150px);
+
+    background: rgba(57, 62, 70, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    box-shadow: 0px 0px 153.4px -53px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+}
+
+#result_div {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 550px;
+    height: 50px;
+    left: calc(50% - 550px / 2);
+    top: calc(50% - 50px / 2 + 150px);
+
+    background: rgba(0, 9, 22, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#result_text {
+    font-family: 'Lalezar', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+    color: #FFFFFF;
+
+    margin: 0 0 0 24px;
+}
+
+#input_div_inp1 {
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    left: calc(50% - 250px / 2 - 155px);
+    top: calc(50% - 90px / 2 - 72px);
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#input_div_inp2 {
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    left: calc(50% - 250px / 2 - 155px);
+    top: calc(50% - 90px / 2 + 48px);
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#input_div_inp3 {
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    left: calc(50% - 250px / 2 + 155px);
+    top: calc(50% - 90px / 2 - 72px);
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#input_div_inp4 {
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    left: calc(50% - 250px / 2 + 155px);
+    top: calc(50% - 90px / 2 + 47px);
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 27px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#days_text {
+    font-family: 'Lalezar', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+
+
+    margin: 0 0 4px 0;
+}
+
+#hours_text {
+    font-family: 'Lalezar', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+    margin: 0 0 4px 0;
+}
+
+#weeks_text {
+    font-family: 'Lalezar', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+    margin: 0 0 4px 0;
+}
+
+#money_text {
+    font-family: 'Lalezar', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+
+    margin: 0 0 4px 0;
+}
+
+#input1,
+#input2,
+#input3,
+#input4 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 46px;
+
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-color .2s, background-color .2s;
+
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#input1 { left: calc(50% - 200px / 2 - 155px); top: calc(50% - 46px / 2 - 63px); }
+#input2 { left: calc(50% - 200px / 2 - 155px); top: calc(50% - 46px / 2 + 57px); }
+#input3 { left: calc(50% - 200px / 2 + 159px); top: calc(50% - 46px / 2 - 63px); }
+#input4 { left: calc(50% - 200px / 2 + 159px); top: calc(50% - 46px / 2 + 57px); }
